@@ -1,5 +1,5 @@
 html {
-    background-image: linear-gradient(#FC5E55, #FA4083);
+    background-image: linear-gradient(#e1bd7b, #000);
 }
 
 body {
@@ -140,7 +140,7 @@ p {
 
 
 .mybutton {
-    background-color: #817077;
+    background-color: #47210c;
     color: white;
     font-family: 'Playfair Display', serif;
     font-size: 1.1em;
