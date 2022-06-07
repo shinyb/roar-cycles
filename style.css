@@ -11,23 +11,6 @@ body {
     font-size: 1.125rem;
 }
 
-a {
-    color: white;
-    text-decoration: none;
-}
-
-
-.container {
-    max-width: 100%;
-    min-height: 300px;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    padding-bottom: 100px;
-}
-
-form {
-    width: 50%;
-}
 
 header {
     display: flex;
@@ -36,6 +19,45 @@ header {
     padding-top: 20px;
     padding-bottom: 40px;
     border-bottom: 1px solid lightgrey;
+    flex-wrap: wrap;
+}
+
+
+
+.homepage, a {
+    color: white;
+    text-decoration: none;
+}
+
+nav {
+    display: flex;
+    
+}
+
+nav a.mybutton {
+    margin-left: 30px;
+}
+
+.navbutton {
+    border: 1px solid white;
+    margin-right: 5px;
+    padding: 11px 25px;
+    font-family: 'Playfair Display', serif;
+    position: relative;
+    display: flex;
+}
+
+
+.container {
+    max-width: 80%;
+    min-height: 300px;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    padding-bottom: 100px;
+}
+
+form {
+    width: 50%;
 }
 
 main {
@@ -163,18 +185,6 @@ a.mybutton {
     0px;
 }
 
-nav a.mybutton {
-    margin-left: 30px;
-}
-
-.navbutton {
-    border: 1px solid white;
-    padding: 11px 25px;
-    font-family: 'Playfair Display', serif;
-    display: inline-block;
-    position: relative;
-}
-
 .testimonials {
     display: flex; 
     flex-wrap: wrap;
@@ -203,6 +213,7 @@ nav a.mybutton {
 .dropdown {
     display: none;
     position: absolute;
+    left: -5px;
     z-index: 1;
     padding-top: 20px;
     text-align: center;
@@ -214,17 +225,23 @@ nav a.mybutton {
 }
 
 .dropdown .navbutton {
-    width: 120px;
+    width: 110px;
     background-color: white;
+    border-bottom: 1px solid #47210c;
+    font-size: 1rem;
+
+    
 }
 
 .dropdown .navbutton a {
-    color: #FA4083;
+    color: #47210c;
+    
 }
 
 
 .inputwrapper {
     margin-bottom: 30px;
+    min-width: 22rem;
 }
 
 input[type=text], input[type=email], textarea {
@@ -251,3 +268,71 @@ input[type=radio] {
 form {
     margin: 40px 0px;
 }
+
+/*--------------------------
+------MEDIA QUERY----------
+============================*/
+@media screen and (max-width: 800px) {
+
+
+nav {
+    flex-direction: column;
+}
+.navbutton {
+    border: none;
+    border-bottom: 1px solid white;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 10px;
+
+}
+
+main {
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-size: .8em;
+    align-items: center;
+    padding: 0;
+}
+
+main h1 {
+    font-size: 2rem;
+
+}
+
+.herobox1 {
+    min-width: 250px;
+    padding: 0;
+}
+
+.herobox2 img {
+    display: none;
+   
+}
+
+.cards {
+    flex-direction: column;
+    align-items: start;
+}
+
+.card1, .card2, .card3 {
+    width: 100%;
+    margin: 20px 0;
+    
+}
+
+.testimonials {
+    flex-direction: column;
+    width: 100%;
+    align-items: start;
+    margin-bottom: 50px;
+
+}
+
+.tbox {
+    width: 100%;
+    padding: 15px;
+}
+
+}
+
