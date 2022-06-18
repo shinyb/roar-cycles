@@ -275,7 +275,6 @@ form {
 ============================*/
 @media screen and (max-width: 800px) {
 
-
 nav {
     flex-direction: column;
 }
@@ -331,7 +330,7 @@ main h1 {
     margin: 20px 0;
     min-height: none;
     background-position: bottom center;
-    padding-top: 40px;
+    padding-top: 60px;
     padding-bottom: 30px;
     
 }
