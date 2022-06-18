@@ -316,9 +316,21 @@ main h1 {
     align-items: start;
 }
 
+    
+/*.card1 {
+    background-image: url(image-background-card1.jpg);
+    background-size: cover;
+    background-position: bottom;
+    min-height: 250px;
+    width: 30%;   
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
+}*/
+
 .card1, .card2, .card3 {
     width: 100%;
     margin: 20px 0;
+    min-height: none;
+    background-position: bottom center;
     
 }
 
