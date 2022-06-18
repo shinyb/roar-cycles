@@ -331,7 +331,8 @@ main h1 {
     margin: 20px 0;
     min-height: none;
     background-position: bottom center;
-    padding: 20px 0;
+    padding-top: 40px;
+    padding-bottom: 30px;
     
 }
 
