@@ -97,7 +97,7 @@ main {
 .card2 {
     background-image: url(image-background-card2.jpg);
     background-size: cover;
-    background-position: bottom center;
+    background-position: left;
     width: 30%;
     min-height: 250px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
@@ -147,9 +147,12 @@ p {
 }
 
 .cards p {
+    width: 90%;
     font-size: 0.85rem;
     line-height: 1.2rem;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .cards i {
@@ -273,7 +276,7 @@ form {
 /*--------------------------
 ------MEDIA QUERY----------
 ============================*/
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
 
 nav {
     flex-direction: column;
@@ -315,25 +318,18 @@ main h1 {
     align-items: start;
 }
 
-    
-/*.card1 {
-    background-image: url(image-background-card1.jpg);
-    background-size: cover;
-    background-position: bottom;
-    min-height: 250px;
-    width: 30%;   
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.228);
-}*/
-
 .card1, .card2, .card3 {
     width: 100%;
     margin: 20px 0;
     min-height: none;
-    background-position: bottom center;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    
+    background-position: bottom;
+        
 }
+
+.cards i {
+    font-size: 70px;
+}
+
 
 .testimonials {
     flex-direction: column;
